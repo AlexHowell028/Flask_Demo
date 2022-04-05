@@ -11,5 +11,11 @@ h1{
     color:#ba87f5
 }
 
+a:link {
+    color:white;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
 input[readonly] 
 {background-color: #DCDCDC;} 
