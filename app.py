@@ -3,7 +3,7 @@ from flask import render_template, redirect, request, url_for
 
 app = Flask(__name__)
 
-friend_list = [{"name": "Alex Howell"} ]
+friend_list = [{"name": "Alex Howell", "email":"alex@howell.com"} ]
 
 @app.route('/')
 def index():
@@ -19,7 +19,8 @@ def add_friend():
         form = request.form
         fname = form['fname']
         lname = form['lname']
-        friend_dict = {"name": fname + " " + lname}
+        email = form['email']
+        friend_dict = {"name": fname + " " + lname, "email": email}
         friend_list.append(friend_dict)
         return redirect(url_for('index'))
     return redirect(url_for('index'))

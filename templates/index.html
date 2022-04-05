@@ -13,7 +13,10 @@
         <br />         
         <label for="lname">Last name:</label>
         <input type="text" id="lname" name="lname"/>
-         <br />
+        <br />         
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"/>
+         <br /><br />
          <input type="submit" id="submit" value="I'll Be Your Friend" />  
          <input type="reset" value="Clear" />
     </form>
@@ -28,6 +31,7 @@
      <thead>
       <tr>
        <th scope="col">Name</th>
+       <th scope="col">Emal Address</th>
       </tr>
      </thead>
 
@@ -35,6 +39,7 @@
       {% for friend in friends %}
       <tr>
         <td>{{ friend.name }}</td>
+        <td>{{ friend.email }}</td>
 
       </tr>
       {% endfor %}
