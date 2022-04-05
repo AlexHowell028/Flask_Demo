@@ -16,6 +16,7 @@ Basic Flask application for class demonstrations
 
 6. Continue working with the project as you normally would.
 
+- [x] Get Flask running on local computer
 - [ ] Add web form for users
 - [ ] Collect web form data and manipulate
 - [ ] Read API data from another source
