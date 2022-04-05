@@ -1,6 +1,9 @@
 # Flask Demo
-Basic Flask application for class demonstrations
 ![MicrosoftAzure](https://img.shields.io/badge/-Azure-blue?logo=microsoftazure)
+![Flask](https://img.shields.io/badge/-Flask-black?logo=flask)
+
+Basic Flask application for class demonstrations
+
 ---
 1. Clone this repository to local computer
 
