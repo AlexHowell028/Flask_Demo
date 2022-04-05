@@ -6,12 +6,22 @@ app = Flask(__name__)
 friend_list = [{"name": "Alex Howell", "email":"alex@howell.com"} ]
 
 @app.route('/')
-def index():
-    return render_template('index.html', pageTitle='Alex\'s Friends', friends = friend_list)
+def home():
+    return render_template('home.html', pageTitle='Vertical Tank Maintenance', friends = friend_list)
 
-@app.route('/alex') 
+@app.route('/estimate') 
+def index():
+    return render_template('index.html', pageTitle= 'Estimate')
+
+
+#@app.route('/home') 
+#def friend():
+ #   return render_template('home.html', pageTitle= 'Home')
+
+
+@app.route('/about') 
 def mike():
-    return render_template('alex.html', pageTitle= 'About Alex')
+    return render_template('about.html', pageTitle= 'About VTM')
 
 @app.route('/add_friend', methods=['GET', 'POST']) 
 def add_friend():
@@ -27,3 +37,4 @@ def add_friend():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
