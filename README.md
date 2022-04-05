@@ -16,8 +16,8 @@ Basic Flask application for class demonstrations
 
 6. Continue working with the project as you normally would.
 
--[  ] Add web form for users
--[  ] Collect web form data and manipulate
--[  ] Read API data from another source
--[  ] Read database data from RDBMS
+- [ ] Add web form for users
+- [ ] Collect web form data and manipulate
+- [ ] Read API data from another source
+- [ ] Read database data from RDBMS
 
