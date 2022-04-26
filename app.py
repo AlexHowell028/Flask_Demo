@@ -15,6 +15,14 @@ def estimate():
 def about():
     return render_template('about.html')
 
+@app.route('/index', methods=['GET','POST'])
+def calculate_tank_top(tank_top):
+    tank_top= 3.14*['tankRadius']
+    return tank_top
+    
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)
 
