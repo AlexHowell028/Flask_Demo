@@ -3,17 +3,17 @@
     <h2>VTM Estimator</h2>
     <hr />
       </p>    
-    <form action="" method ="POST">
+    <form action="/" method ="POST">
         <label for="tankRadius">
           Tank Radius: 
-              <input type="text" name="tankRad" id="tankRadius" placeholder="radius in inches" autofocus required>
+              <input type="text" name="radius" id="tankRadius" placeholder="radius in inches" autofocus required>
         </label>
       <p>  
 
       <p>
         <label for="tankHeight">
           Tank Height: 
-              <input type="text" name="tankHt" id="tankHeight" placeholder="height in inches" required>
+              <input type="text" name="height" id="tankHeight" placeholder="height in inches" required>
         </label>
       </p>  
 
@@ -22,9 +22,11 @@
         <input type="reset" value="Clear">
 
     </form>
+    {%if data%}
     <p>
-        <h3>The estimated cost would be $(total_cost) </h3>
+        <h3>The estimated cost would be ${{data}} </h3>
     </p>
+    {%endif%}
 
 
  {% endblock %} 
