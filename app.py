@@ -23,6 +23,8 @@ def estimate():
         height = float (form['height'])
         estimate=radius+height
         return render_template('index.html', data=estimate)
+    return render_template('index.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
