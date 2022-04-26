@@ -3,12 +3,8 @@ from flask import render_template, request
 
 app = Flask(__name__)
 
-@app.route('/')
-def home():
-    return render_template('home.html')
-
 @app.route('/estimate') 
-def estimate():
+def index():
     return render_template('index.html')
 
 @app.route('/about') 
@@ -19,7 +15,7 @@ def about():
 #based on the formulas found in the details section above
 #(Output)The calculation should produce a value stored in a varaible that is displayed on estimate.html after processing
 
-@app.route('/index', methods=['GET','POST'])
+@app.route('/', methods=['GET','POST'])
 def estimate():
     if request.method == 'POST':
         form = request.form
